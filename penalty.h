@@ -6,13 +6,13 @@ using namespace std;
 class Penalty
 {
 public:
-	string numberAuto;
+	int numberAuto;
 	int prise;
 	string namePenalty;
 
-	Penalty(string numbAuto, int prise, string name) : numberAuto{ numbAuto }, prise{ prise }, namePenalty{ name }{};
+	Penalty(int numbAuto, int prise, string name) : numberAuto{ numbAuto }, prise{ prise }, namePenalty{ name }{};
 
-	Penalty() : numberAuto{ "0" }, prise{ 0 }, namePenalty{ "0"}{};
+	Penalty() : numberAuto{ 0 }, prise{ 0 }, namePenalty{ "0"}{};
 	void printPenalty()
 	{
 		cout << "Number - " << numberAuto << endl;
